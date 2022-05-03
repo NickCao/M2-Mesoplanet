@@ -117,7 +117,7 @@ char* find_executable(char* name)
 		next = find_char(MPATH, ':');
 	}
 
-	return NULL;
+	return env_lookup(name);
 }
 
 void sanity_command_check(char** array)
